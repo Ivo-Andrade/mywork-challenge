@@ -1,5 +1,5 @@
 # Timetracking Challenge
-This is [mywork](https://www.mywork.com.br)'s full-stack intership coding challenge. It is intended to test both you back- and front-end, as well as your critical thinking and problem solving skills.
+This is [mywork](https://www.mywork.com.br)'s full-stack internship coding challenge. It is intended to test both you back- and front-end, as well as your critical thinking and problem solving skills.
 We don't think there is a single solution to this problem. If you don't know some of the technologies we ask for, try to learn some of it and let us know if that's the case.
 ## Background
 Timetracking (_controle de ponto_) is currently our main feature. It consists of tracking the time at which an employee presses the "checkin" button. One feature of a timetracking is that an user cannot delete it.
