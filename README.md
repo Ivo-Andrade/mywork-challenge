@@ -2,7 +2,18 @@
 This is [mywork](https://www.mywork.com.br)'s full-stack internship coding challenge. It is intended to test both you back- and front-end, as well as your critical thinking and problem solving skills.
 We don't think there is a single solution to this problem. If you don't know some of the technologies we ask for, try to learn some of it and let us know if that's the case.
 ## Background
-Timetracking (_controle de ponto_) is currently our main feature. It consists of tracking the time at which an employee presses the "checkin" button. One feature of a timetracking is that an user cannot delete it.
+Timetracking (_controle de ponto_) is currently our main feature. It consists of recording the date and time at which an employee presses the "checkin" button, sequentially. Every time the button is pressed, a timetracking event should be recorded.
+### Timetracking object sample
+```
+{
+  type: 'timetracking',
+  latitude: '58.4343',
+  longitude: '-120.9245',
+  created_at: 'Thu, 29 Nov 2018 09:16:09 UTC +00:00'
+  // xxx: 'any other field you think you should add'
+}
+```
+One feature of a timetracking is that an user cannot delete it.
 ## The Challenge
 You should create a simple timetracking solution.
 In this challenge you should use (at least) the following technologies:
