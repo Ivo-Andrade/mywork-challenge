@@ -50,9 +50,9 @@ In this challenge you should use (at least) the following technologies:
 * **Disable timetracking button if the user is not inside any of the geofences**
 * At least one front-end and one back-end validation
 * Timetrackings should be stored with geolocalization information - latitude and longitude are enough and don't need to be precise, but you are expected to implement browser HTML5 geolocalization
-* Unit tests. RSpec is recommended. If you are writing tests, make sure they test something meaningful. All written tests should be working and pass when ran. We expect a decent coverage percentage
+* Unit tests. RSpec is recommended. If you are writing tests, make sure they test something meaningful. All written tests should be working and pass when ran.
 ### Optional Items
-These are optional items that could should extra dedication or a particular skill.
+These are optional items that could show extra dedication or a particular skill.
 * Show timetracking containing the geolocation on a map (you can use google maps api for this)
 * Create timetracking - Geolocalization could be created by clicking the location on the map
 * Use the SLIM scripting language for views
@@ -60,14 +60,14 @@ These are optional items that could should extra dedication or a particular skil
 ## Expectations
 ### What we expect
 * Use clean code (principles such as DRY, manageable and maintanable)
-* Organized and well indented code. Use 2 spaces for indent
+* Organized and well indented code. Indent with 2 spaces
 * It is highly recommended that all names in your code are written in English rather than Portuguese. The UI should be either in Portuguese or English
 ### What we DON'T expect
 * Don't worry about timezone management
 * Don't implement authorization or authentication
 * Don't waste a huge amount of time on this challenge
-* Don't worry about browser compatibility. Assume the user uses a modern browser
+* Don't worry about browser compatibility. Assume a modern browser is being used
 * Don't worry about creating the most beautiful design or user experience. Views should be DECENT. Feel free to use bootstrap or any other UI framework
-* Don't worry about test coverage. We just want to see how you think about testing
+* Don't worry about 100% coverage. We just want to see how you think about testing
 ## Other Information
 * Feel free to use any public gems
