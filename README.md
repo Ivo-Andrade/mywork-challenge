@@ -57,6 +57,7 @@ These are optional items that could show extra dedication or a particular skill.
 * Create timetracking - Geolocalization could be created by clicking the location on the map
 * Use the SLIM scripting language for views
 * Integration and E2E tests (capybara)
+* [extra points] At least one component in React
 ## Expectations
 ### What we expect
 * Use clean code (principles such as DRY, manageable and maintanable)
