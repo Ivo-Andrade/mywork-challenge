@@ -1,4 +1,4 @@
-#Development Notes
+# Development Notes
 
 ## Introduction
 Time-tracking is a fundamental feature to a company's ability to both regulate and organize its administration and find and create opportunities to remain functional and efficient. It allows companies to, by the means of registering the times of clock-in, clock-out and other breaks or halts in work hours, keep track of working hours of its employees and processes, allowing the company to fulfill its obligations with their workers and, likewise, be able to tell if they are all fulfilling theirs.
