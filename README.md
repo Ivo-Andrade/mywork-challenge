@@ -41,7 +41,8 @@ With said bases, and assuming the reader has at least this basic knowledge on Ru
 
 Likewise, it's possible to make a CompanyManager class, with also a brief but expandable profile (for this project, we'll identify them by a name and authentication method), with a dependable class Geofence, which can be created and edited by a company manager and will store its related TimeTracking as they are validated and created.
 ### Creating the model
-##(Web page)
+
+## (Web page)
 (HTML / CSS)
 (Bootstrap / MDB)
 (JS / JQuery)
