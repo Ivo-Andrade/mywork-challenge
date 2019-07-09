@@ -1,0 +1,42 @@
+@import url('http://getbootstrap.com/dist/css/bootstrap.css');
+
+html, body{
+	min-height: 100%;
+	margin: 0;
+	font-size: 16px;
+	font-weight: 300;
+	font-family: Roboto, sans-serif;
+}
+
+.wrapper {
+    height: 100vh;
+	margin:0;
+	padding:0;
+}
+
+/***** Media Queries *****/
+
+/* Desktop */
+@media (min-width: 1200px){
+
+}s
+
+/* Laptops */
+@media (max-width: 1200px){
+
+}
+
+/* Tablets */
+@media (max-width: 991px){
+
+}
+
+/* Mobile */
+@media (max-width: 600px){
+
+}
+
+/* Legacy Mobile */
+@media (max-width: 500px){
+
+}
