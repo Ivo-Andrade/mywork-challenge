@@ -26,8 +26,7 @@ For this project, for example, we need to establish the relations present in a c
 * The company manager, which for this model will only have a name field. The company manager should be able to view the company's time-tracking and geofences, being able to also edit the geofences if necessary.
 
 With said concepts, we can create a simplified model of our project, that will both supply our project needs and be also expandable whenever it proves necessary (i. e. adding a 'Salary' class with values such as 'Hours served', and 'Amount' to be paid):
-
-![Relational-Model.pdf](https://github.com/Ivo-Andrade/mywork-challenge/blob/master/relationalModel.pdf)
+![Relational_Model.png](https://github.com/Ivo-Andrade/mywork-challenge/blob/master/relational_mod.png)
 
 It's important to notice the cardinalities of the project, as each of multiples employees will be able to create multiple time-tracking entries for their clock-ins, but for this project, each time-tracking will related to a single geofence, since its expected that the worker stay within its boundaries until clock-outs. It's also expected that the company manager (or managers) will look forward creating more than one geofence.
 
