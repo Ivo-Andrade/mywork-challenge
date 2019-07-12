@@ -1,0 +1,35 @@
+<%= form_with(model: @geofence, local: true) do |form| %>
+ 
+  <% if @geofence.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        There's <%= pluralize(@geofence.errors.count, "error") %> in your geofence update:
+      </h2>
+      <ul>
+        <% @geofence.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+ 
+  <p>
+    <%= form.label :latitude, 'Latitude' %><br>
+    <%= form.text_field :latitude, placeholder: "Between -90 and 90" %>
+  </p>
+
+  <p>
+    <%= form.label :longitude, 'Longitude' %><br>
+    <%= form.text_area :longitude, placeholder: "Between -180 and 180" %>
+  </p>
+
+  <p>
+    <%= form.label :radius, 'Radius' %><br>
+    <%= form.text_area :radius, placeholder: "Radius in [unit]" %>
+  </p>
+
+  <p>
+    <%= form.submit "Update Geofence" %>
+  </p>
+ 
+<% end %>

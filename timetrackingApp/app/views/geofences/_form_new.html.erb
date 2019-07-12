@@ -1,0 +1,33 @@
+<%= form_with scope: :geofence, url:geofences_path, local: true do |form| %>
+  <% if @geofence.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        There's <%= pluralize(@geofence.errors.count, "error") %> in your geofence register:
+      </h2>
+      <ul>
+        <% @geofence.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <p>
+    <%= form.label :latitude, 'Latitude' %><br>
+    <%= form.text_field :latitude, placeholder: "Between -90 and 90" %>
+  </p>
+ 
+  <p>
+    <%= form.label :longitude, 'Longitude' %><br>
+    <%= form.text_field :longitude, placeholder: "Between -180 and 180"  %>
+  </p>
+
+  <p>
+  	<%= form.label :radius, 'Radius' %><br>
+  	<%= form.text_field :radius, placeholder: "Radius in [unit]"  %>
+  </p>
+ 
+  <p>
+    <%= form.submit "Register Geofence" %>
+  </p>
+<% end %>

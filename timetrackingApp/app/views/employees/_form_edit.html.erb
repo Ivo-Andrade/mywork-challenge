@@ -1,0 +1,32 @@
+<%= form_with(model: @employee, local: true) do |form| %>
+ 
+  <% if @employee.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        There's <%= pluralize(@employee.errors.count, "error") %> in your profile update:
+      </h2>
+      <ul>
+        <% @employee.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+ 
+  <p>
+    <%= form.label :name, 'Your Full Name' %><br>
+    <%= form.text_field :name, placeholder: "A. Worker" %>
+  </p>
+
+  <p>
+    <%= form.label :profile_desc, 'Your profile description' %><br>
+    <%= form.text_area :profile_desc, placeholder: "Tell us more about you :)" %>
+  </p>
+
+  <%- link_to 'Change password', # update_password_employee_path %> 
+
+  <p>
+    <%= form.submit "Update Profile" %>
+  </p>
+ 
+<% end %>

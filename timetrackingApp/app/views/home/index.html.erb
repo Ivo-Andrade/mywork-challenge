@@ -1,0 +1,12 @@
+<h1>Home Index</h1>
+<p>Home page for 'logged in' user</p>
+
+<p><strong>Company Manager Sections</strong></p>
+<%= link_to 'List Employees', controller: 'employees' %><br>
+<%= link_to 'List Geofences', controller: 'geofences' %>
+
+<p><strong>Employee Sections</strong></p>
+<%= link_to 'Add timetracking', search_employees_path %>
+
+<br><br>
+<%= link_to 'Back', welcome_index_path %>

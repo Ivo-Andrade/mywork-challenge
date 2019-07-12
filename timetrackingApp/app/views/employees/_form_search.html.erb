@@ -1,0 +1,11 @@
+<%= form_tag(employees_path method: :get) do %>
+
+  <p>
+    <%=  :search, 'Enter your contract ID' %><br>
+    <%= text_field_tag :search, params[:search], placeholder: "Your contract ID here" %>
+  </p>
+
+  <p>
+    <%= form.submit "Hit the clock!" %>
+  </p>
+<% end %>

@@ -1,0 +1,43 @@
+<%= form_with scope: :employee, url:employees_path, local: true do |form| %>
+  <% if @employee.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        There's <%= pluralize(@employee.errors.count, "error") %> in your profile register:
+      </h2>
+      <ul>
+        <% @employee.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <p>
+    <%= form.label :name, 'Your Full Name' %><br>
+    <%= form.text_field :name, placeholder: "A. Worker" %>
+  </p>
+ 
+  <p>
+    <%= form.label :contract_ID, 'Your contract ID' %><br>
+    <%= form.text_field :contract_ID, placeholder: "The number provided by contractor" %>
+  </p>
+
+  <p>
+  	<%= form.label :password, 'Enter a password' %><br>
+  	<%= form.password_field :password, placeholder: "Your password to access this system" %>
+  </p>
+  
+  <p>
+    <%= form.label :password_confirmation, 'Confirm password' %><br>
+    <%= form.password_field :password_confirmation, placeholder: "Your password to access this system" %>
+  </p>
+
+  <p>
+  	<%= form.label :profile_desc, 'Your profile description' %><br>
+  	<%= form.text_area :profile_desc, placeholder: "Tell us more about you :)" %>
+  </p>
+ 
+  <p>
+    <%= form.submit "Register!" %>
+  </p>
+<% end %>

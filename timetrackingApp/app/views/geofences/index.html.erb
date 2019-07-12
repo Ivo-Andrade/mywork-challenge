@@ -1,0 +1,30 @@
+<h1>Index Geofences</h1>
+<p>List all geofences</p>
+
+<table>
+	<tr>
+		<th>Fence ID</th>
+		<th>Latitude</th>
+		<th>Longitude</th>
+		<th>Radius</th>
+		<th colspan="3">Management</th>
+	</tr>
+
+	<% @geofences.each do |geofence| %>
+		<tr>
+			<td><%= geofence.id %></td>
+			<td><%= geofence.latitude %></td>
+			<td><%= geofence.longitude %></td>
+			<td><%= geofence.radius %></td>
+			<td><%= link_to 'Show', geofence_path(geofence) %></td>
+			<td><%= link_to 'Edit', edit_geofence_path(geofence) %></td>
+			<td><%= link_to 'Destroy', geofence_path(geofence),
+					method: :delete,
+					data: {confirm: "Are you sure?" } %></td>
+		</tr>
+	<% end %>
+</table><br>
+
+<%= link_to 'Add Geofence', new_geofence_path %><br><br>
+
+<%= link_to 'Back', home_index_path %>
